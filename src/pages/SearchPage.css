@@ -1,0 +1,131 @@
+.searchPage__header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 30px;
+  border-bottom: 1px solid lightgray;
+  z-index: 100;
+  align-items: flex-start;
+}
+.searchPage__logo {
+  object-fit: contain;
+  height: 50px;
+  margin-right: 50px;
+}
+.searchPage__headerBody > .search > .search__input {
+  margin-top: 0;
+  /* flex: 1; */
+  width: unset;
+  margin: unset;
+  max-width: unset;
+}
+.searchPage__options {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+.searchPage__optionsLeft,
+.searchPage__optionsRight {
+  display: flex;
+}
+.searchPage__options a,
+.searchPage__optionsRight a {
+  text-decoration: none;
+  color: gray;
+}
+.searchPage__optionsRight {
+  margin-left: 30px;
+}
+.searchPage__option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.searchPage__option a {
+  margin-left: 5px;
+}
+.searchPage__result {
+  margin: 40px 0;
+}
+.searchPage__resultCount {
+  color: gray;
+  font-size: 14px;
+}
+.searchPage__results {
+  max-width: 650px;
+  margin-top: 20px;
+  margin-left: 240px;
+  margin-bottom: 100px;
+}
+.searchPage__resultTitle {
+  text-decoration: none;
+}
+.searchPage__resultTitle:hover {
+  text-decoration: underline;
+}
+.searchPage__resultTitle > h2 {
+  font-weight: 500;
+}
+.searchPage__resultSnippet {
+  margin-top: 10px;
+}
+.searchPage__resultImage {
+  object-fit: contain;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 950px){
+    .searchPage__header{
+        border: none;
+    }
+}
+@media (max-width: 500px) {
+  .searchPage__header {
+    border: none;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  padding: 20px;
+  }
+  .searchPage__logo {
+    margin-left: 60px;
+  }
+  .searchPage__headerBody{
+      width: 100%;
+  }
+  .searchPage__headerBody > .search > .search__input {
+      width: 100%;
+      margin-right: 20px;
+  }
+  .searchPage__options {
+   display: none;
+  }
+  .searchPage__option > a {
+    font-size: 1rem;
+  }
+  .searchPage__results {
+  max-width: 400px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 0px;
+  }
+  .searchPage__resultTitle {
+    font-size: 1rem;
+  }
+  .searchPage__result {
+    background-color: #f8f8f8;
+  }
+  .searchPage__resultImage {
+    object-fit: contain;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .searchPage{
+      width: 90vw;
+  }
+ 
+}
